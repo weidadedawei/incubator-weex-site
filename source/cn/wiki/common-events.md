@@ -31,14 +31,14 @@ Weex 提供了通过事件触发动作的能力，例如在用户点击组件时
 
 **注意：**
 
-`<input>` 和 `<switch>` 组件目前不支持 `click` 事件，请使用 `change` 或 `input` 事件来代替。
+`<input>` 和 `<switch>` 组件目前不支持 `longpress` 事件，请使用 `change` 或 `input` 事件来代替。
 
 ### 事件对象
 - `type` : `longpress`
 - `target` : 触发长按事件的目标组件
 - `timestamp` : 长按事件触发时的时间戳
 
-## Appear 事件
+## `Appear`
 
 如果一个位于某个可滚动区域内的组件被绑定了 `appear` 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。
 
@@ -49,7 +49,7 @@ Weex 提供了通过事件触发动作的能力，例如在用户点击组件时
 - `timestamp` : 事件被触发时的时间戳
 - `direction` : 触发事件时屏幕的滚动方向，`up` 或 `down`
 
-## Disappear 事件
+## `Disappear`
 
 如果一个位于某个可滚动区域内的组件被绑定了 `disappear` 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。
 
@@ -60,7 +60,7 @@ Weex 提供了通过事件触发动作的能力，例如在用户点击组件时
 - `timestamp` : 事件被触发时的时间戳
 - `direction` : 触发事件时屏幕的滚动方向，`up` 或 `down`
 
-## Page 事件
+## `Page`
 
 *注意：仅支持 iOS 和 Android，H5 暂不支持。*
 
